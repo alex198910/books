@@ -30,6 +30,7 @@ class CellTableViewCell: UITableViewCell {
     func setupShort(){
         addSubview(short)
         short.frame = CGRect(x: 120, y: 70, width: 245, height: 30)
+        
         short.numberOfLines = 0
         short.sizeToFit()
         short.textAlignment = .left

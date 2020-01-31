@@ -44,7 +44,7 @@ protocol Universal {
 
 extension Magazine: Universal {
     var nameUniversal: String {
-        (name ?? "") + "\n " + (date ?? "")
+        (name ?? "") + "\n" + (date ?? "")
     }
     
     var displayInfoForTableview: String {
