@@ -59,8 +59,8 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let detailView = DetailViewController()
-        detailView.longD.text = self.data[indexPath.row].displayInfoForDetailview
-        detailView.info.text = self.data[indexPath.row].nameUniversal
+        detailView.longDescription.text = self.data[indexPath.row].displayInfoForDetailview
+        detailView.topTitle.text = self.data[indexPath.row].nameUniversal
         detailView.image = self.data[indexPath.row].mainPicture
         detailView.view.backgroundColor = UIColor.white
         self.navigationController?.pushViewController(detailView, animated: true)

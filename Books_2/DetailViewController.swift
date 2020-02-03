@@ -10,59 +10,73 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    let info = UILabel()
-    let longD = UILabel()
+    let topTitle = UILabel()
+    let longDescription = UILabel()
     let bookImage = UIImageView()
     var scrollView = UIScrollView()
     var image : String?
+    var textView = UITextView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        self.view.addSubview(info)
-        self.view.addSubview(bookImage)
-        
-        scrollView.addSubview(longD)
+        setupTopTitle()
+        setupTextView()
+        setupBookImage()
+    }
+    
+    
+    func setupTextView(){
+        self.view.addSubview(textView)
+        textView.text = longDescription.text
+        textView.font = .systemFont(ofSize: 14, weight: .light)
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
+        textView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
+        textView.topAnchor.constraint(equalTo: topTitle.bottomAnchor).isActive = true
+        textView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+    
+    func setupTopTitle() {
+        self.view.addSubview(topTitle)
+        topTitle.frame = CGRect(x: 20, y: 85, width: 320, height: 100)
+        topTitle.numberOfLines = 0
+        topTitle.font = .systemFont(ofSize: 25, weight: .bold)
+        topTitle.textAlignment = .center
+    }
+    
+    func setupLongDescription(){
+        scrollView.addSubview(longDescription)
+        longDescription.numberOfLines = 0
+        longDescription.font = .systemFont(ofSize: 15, weight: .light)
+        longDescription.textAlignment = .left
+        //longDescription.sizeToFit()
+        longDescription.translatesAutoresizingMaskIntoConstraints = false
+        longDescription.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        longDescription.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        longDescription.topAnchor.constraint(equalTo: topTitle.bottomAnchor, constant: 20).isActive = true
+        longDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+    func setupScrollView() {
         self.view.addSubview(scrollView)
-        
-        
-        info.frame = CGRect(x: 20, y: 85, width: 320, height: 100)
-        info.numberOfLines = 0
-        info.font = .systemFont(ofSize: 25, weight: .bold)
-        info.textAlignment = .center
-        
-//        longD.frame = CGRect(x: 25, y: 25, width: 310, height: 100)
-
-        longD.numberOfLines = 0
-        longD.font = .systemFont(ofSize: 15, weight: .light)
-        longD.textAlignment = .left
-        longD.sizeToFit()
-        
-        longD.translatesAutoresizingMaskIntoConstraints = false
-        longD.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        longD.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        longD.topAnchor.constraint(equalTo: info.bottomAnchor, constant: 30).isActive = true
-        longD.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
-//        scrollView.frame = CGRect(x: 20, y: 130, width: 350, height: 1800)
-        //scrollView = UIScrollView(frame: UIScreen.main.bounds)
-//        scrollView.contentSize = CGSize(width: longD.frame.width, height: longD.frame.height + 1300)
-        //scrollView.contentSize = longD.bounds.size
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         scrollView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: info.bottomAnchor, constant: 30).isActive = true
+        scrollView.topAnchor.constraint(equalTo: topTitle.bottomAnchor, constant: 30).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-
-        //image = (image?.replacingOccurrences(of: "images/", with: ""))
+        scrollView.contentSize = longDescription.frame.size
+        scrollView.contentSize = CGSize(width: longDescription.frame.width, height: longDescription.frame.height + 1300)
+    }
+    
+    func setupBookImage() {
+        self.view.addSubview(bookImage)
         bookImage.frame = UIScreen.main.bounds
         bookImage.image = UIImage(named: image ?? "no_image.png")
         bookImage.alpha = 0.2
-        
-
-        // Do any additional setup after loading the view.
     }
+    
+    
     
     
 
