@@ -10,9 +10,9 @@ import UIKit
 
 class CellTableViewCell: UITableViewCell {
     
-    let info = UILabel()
-    let bookImage = UIImageView()
-    let short = UILabel()
+    let titleHeadline = UILabel()
+    let shortDescription = UILabel()
+    let imageOfProduct = UIImageView()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,30 +30,25 @@ class CellTableViewCell: UITableViewCell {
     }
     
     func setupShort(){
-        addSubview(short)
-        short.frame = CGRect(x: 120, y: 70, width: self.frame.width - 125, height: 30)
-        //short.leftAnchor.constraint(equalTo: bookImage.rightAnchor, constant: 5).isActive = true
-        
-        short.numberOfLines = 0
-        short.sizeToFit()
-        short.textAlignment = .left
-        short.font = .systemFont(ofSize: 9, weight: .light)
-        
+        addSubview(shortDescription)
+        shortDescription.frame = CGRect(x: 120, y: 70, width: self.frame.width - 125, height: 30)
+        shortDescription.numberOfLines = 0
+        shortDescription.sizeToFit()
+        shortDescription.textAlignment = .left
+        shortDescription.font = .systemFont(ofSize: 9, weight: .light)
     }
     
     func setupInfo(){
-        addSubview(info)
-        info.frame = CGRect(x: 120, y: 0, width: 245, height: 70)
-        info.numberOfLines = 0
-        info.sizeToFit()
-        info.textAlignment = .left
-        
+        addSubview(titleHeadline)
+        titleHeadline.frame = CGRect(x: 120, y: 0, width: 245, height: 70)
+        titleHeadline.numberOfLines = 0
+        titleHeadline.sizeToFit()
+        titleHeadline.textAlignment = .left
     }
     
     func setupImage(){
-        addSubview(bookImage)
-        bookImage.frame = CGRect(x: 0, y: 0, width: 110, height: 200)
-        
+        addSubview(imageOfProduct)
+        imageOfProduct.frame = CGRect(x: 0, y: 0, width: 110, height: 200)
     }
     
 }

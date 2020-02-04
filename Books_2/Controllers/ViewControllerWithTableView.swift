@@ -46,9 +46,9 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
             return UITableViewCell()
         }
         let infoForCell = data[indexPath.row]
-        cell.info.text = infoForCell.nameUniversal
-        cell.bookImage.image = UIImage(named: infoForCell.mainPicture )
-        cell.short.text = (infoForCell.displayInfoForTableview ) + "\n\n" + "\(infoForCell.shortMoreInfo)"
+        cell.titleHeadline.text = infoForCell.nameUniversal
+        cell.imageOfProduct.image = UIImage(named: infoForCell.mainPicture )
+        cell.shortDescription.text = (infoForCell.displayInfoForTableview ) + "\n\n" + "\(infoForCell.shortMoreInfo)"
         return cell
     }
     
