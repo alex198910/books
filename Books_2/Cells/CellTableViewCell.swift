@@ -21,12 +21,16 @@ class CellTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        // Configure the view for the selected state
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
         self.backgroundColor = UIColor(red:0.87, green:0.65, blue:0.65, alpha:0.20)
         self.translatesAutoresizingMaskIntoConstraints = false
         setupShort()
         setupInfo()
         setupImage()
-        // Configure the view for the selected state
     }
     
     func setupShort() {

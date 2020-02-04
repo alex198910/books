@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let tableView = UITableView.init(frame: .zero, style: .plain)
     var data: [Universal] = []
@@ -44,6 +44,7 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
             return UITableViewCell()
         }
         let infoForCell = data[indexPath.row]
+        
         cell.titleHeadline.text = infoForCell.nameUniversal
         cell.imageOfProduct.image = UIImage(named: infoForCell.mainPicture )
         cell.shortDescription.text = (infoForCell.displayInfoForTableview ) + "\n\n" + "\(infoForCell.shortMoreInfo)"
@@ -54,6 +55,7 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         tableView.deselectRow(at: indexPath, animated: true)
         let detailView = DetailViewController()
         let infoForCell = data[indexPath.row]
+        
         detailView.longDescription.text = infoForCell.displayInfoForDetailview
         detailView.headlineTitle.text = infoForCell.nameUniversal
         detailView.image = infoForCell.mainPicture

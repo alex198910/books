@@ -11,10 +11,8 @@ import UIKit
 class DetailViewController: UIViewController {
     
     let headlineTitle = UILabel()
-    let longDescription = UILabel()
     let bookImage = UIImageView()
-    var scrollView = UIScrollView()
-    var londDescription = UITextView()
+    var longDescription = UITextView()
     var image: String?
 
     override func viewDidLoad() {
@@ -40,14 +38,13 @@ class DetailViewController: UIViewController {
     
     
     func setupLondDescription() {
-        self.view.addSubview(londDescription)
-        londDescription.text = longDescription.text
-        londDescription.font = .systemFont(ofSize: 14, weight: .light)
-        londDescription.translatesAutoresizingMaskIntoConstraints = false
-        londDescription.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
-        londDescription.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
-        londDescription.topAnchor.constraint(equalTo: headlineTitle.bottomAnchor).isActive = true
-        londDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        self.view.addSubview(longDescription)
+        longDescription.font = .systemFont(ofSize: 14, weight: .light)
+        longDescription.translatesAutoresizingMaskIntoConstraints = false
+        longDescription.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
+        longDescription.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
+        longDescription.topAnchor.constraint(equalTo: headlineTitle.bottomAnchor).isActive = true
+        longDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
 

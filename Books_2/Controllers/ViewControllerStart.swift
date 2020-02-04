@@ -8,17 +8,15 @@
 
 import UIKit
 
-
 class ViewControllerStart: UIViewController {
     
     let booksButton: UIButton = UIButton(type: .system)
     let magazinesButton: UIButton = UIButton(type: .system)
     let stackView = UIStackView()
+    let spinner = UIActivityIndicatorView()
     let source = SourceForParse.shared
     let dataManager = DataManager.shared
     var data = [Universal]()
-    var spinner = UIActivityIndicatorView()
-    
     
     @objc func booksButtonAction() {
         stackView.isHidden = true
@@ -111,7 +109,7 @@ class ViewControllerStart: UIViewController {
             strongSelf.data = data
             DispatchQueue.main.async {
                 self?.spinner.stopAnimating()
-                let mainTVC = ViewControllerWithTableView()
+                let mainTVC = TableViewController()
                 mainTVC.data = strongSelf.data
                 self?.navigationController?.pushViewController(mainTVC, animated: true)
                 self?.stackView.isHidden = false

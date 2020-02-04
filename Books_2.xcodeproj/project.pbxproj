@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8462B67F23E96FBB00A42CEC /* SourceForPars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462B67E23E96FBB00A42CEC /* SourceForPars.swift */; };
-		8488912323DF16370012CD69 /* ViewControllerWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488912223DF16370012CD69 /* ViewControllerWithTableView.swift */; };
+		8488912323DF16370012CD69 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488912223DF16370012CD69 /* TableViewController.swift */; };
 		8488914E23E059260012CD69 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488914C23E059260012CD69 /* CellTableViewCell.swift */; };
 		8488914F23E059260012CD69 /* CellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488914D23E059260012CD69 /* CellTableViewCell.xib */; };
 		848B63CF23E0829700D43771 /* listOfBooks.json in Resources */ = {isa = PBXBuildFile; fileRef = 848B63CE23E0829700D43771 /* listOfBooks.json */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		8462B67E23E96FBB00A42CEC /* SourceForPars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceForPars.swift; sourceTree = "<group>"; };
-		8488912223DF16370012CD69 /* ViewControllerWithTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithTableView.swift; sourceTree = "<group>"; };
+		8488912223DF16370012CD69 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8488914C23E059260012CD69 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		8488914D23E059260012CD69 /* CellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTableViewCell.xib; sourceTree = "<group>"; };
 		848B63CE23E0829700D43771 /* listOfBooks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listOfBooks.json; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				8497147E23DEE4A100E92190 /* ViewControllerStart.swift */,
-				8488912223DF16370012CD69 /* ViewControllerWithTableView.swift */,
+				8488912223DF16370012CD69 /* TableViewController.swift */,
 				84A2AC6523E1AE8E0013EE5B /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -195,7 +195,7 @@
 				848B63D323E087AD00D43771 /* JsonDataGetter.swift in Sources */,
 				8488914E23E059260012CD69 /* CellTableViewCell.swift in Sources */,
 				8497147B23DEE4A100E92190 /* AppDelegate.swift in Sources */,
-				8488912323DF16370012CD69 /* ViewControllerWithTableView.swift in Sources */,
+				8488912323DF16370012CD69 /* TableViewController.swift in Sources */,
 				84A2AC6623E1AE8E0013EE5B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
