@@ -67,7 +67,6 @@ extension Magazine: Universal {
 
 extension Book: Universal {
     var nameUniversal: String {
-        //"\(String(describing: title))\nby \(String(describing: author))"
         (title ?? "") + "\nby " + (author ?? "")
     }
 

@@ -19,15 +19,18 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         self.tableView.register(UINib(nibName: "CellTableViewCell", bundle: nil), forCellReuseIdentifier: "CellTableViewCell")
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        setupTableViewConstraint()
         
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        // Do any additional setup after loading the view.
+    }
+    
+    func setupTableViewConstraint() {
         view.addSubview(self.tableView)
-        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,21 +45,21 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath) as? CellTableViewCell else {
             return UITableViewCell()
         }
-        cell.info.text = data[indexPath.row].nameUniversal
-        cell.bookImage.image = UIImage(named: data[indexPath.row].mainPicture )
-        cell.backgroundColor = UIColor(red:0.87, green:0.65, blue:0.65, alpha:0.20)
-        let shortD = (data[indexPath.row].displayInfoForTableview ) + "\n\n"
-        cell.short.text = shortD + "\(data[indexPath.row].shortMoreInfo)"
+        let infoForCell = data[indexPath.row]
+        cell.info.text = infoForCell.nameUniversal
+        cell.bookImage.image = UIImage(named: infoForCell.mainPicture )
+        cell.short.text = (infoForCell.displayInfoForTableview ) + "\n\n" + "\(infoForCell.shortMoreInfo)"
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let detailView = DetailViewController()
-        detailView.longDescription.text = self.data[indexPath.row].displayInfoForDetailview
-        detailView.topTitle.text = self.data[indexPath.row].nameUniversal
-        detailView.image = self.data[indexPath.row].mainPicture
-        detailView.view.backgroundColor = UIColor.white
+        let infoForCell = data[indexPath.row]
+        detailView.longDescription.text = infoForCell.displayInfoForDetailview
+        detailView.topTitle.text = infoForCell.nameUniversal
+        detailView.image = infoForCell.mainPicture
+        
         self.navigationController?.pushViewController(detailView, animated: true)
     }
     

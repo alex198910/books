@@ -1,5 +1,50 @@
 [
     {
+        "name" : "Scientific American",
+        "date" : "1845 - 2020",
+        "shortInfo":  "Its an American popular science magazine. Many famous scientists, including Albert Einstein, have contributed articles to it. It is the oldest continuously published monthly magazine in the United States (though it only became monthly in 1921).",
+        "longInfo": "Scientific American was founded by inventor and publisher Rufus M. Porter in 1845 as a four-page weekly newspaper. Throughout its early years, much emphasis was placed on reports of what was going on at the U.S. Patent Office. It also reported on a broad range of inventions including perpetual motion machines, an 1860 device for buoying vessels by Abraham Lincoln, and the universal joint which now can be found in nearly every automobile manufactured. Current issues include a \"this date in history\" section, featuring excerpts from articles originally published 50, 100, and 150 years earlier. Topics include humorous incidents, wrong-headed theories, and noteworthy advances in the history of science and technology. Porter sold the publication to Alfred Ely Beach and Orson Desaix Munn a mere ten months after founding it. Until 1948, it remained owned by Munn & Company. Under Munn's grandson, Orson Desaix Munn III, it had evolved into something of a \"workbench\" publication, similar to the twentieth-century incarnation of Popular Science. In the years after World War II, the magazine fell into decline. In 1948, three partners who were planning on starting a new popular science magazine, to be called The Sciences, purchased the assets of the old Scientific American instead and put its name on the designs they had created for their new magazine. Thus the partners—publisher Gerard Piel, editor Dennis Flanagan, and general manager Donald H. Miller, Jr.—essentially created a new magazine. Miller retired in 1979, Flanagan and Piel in 1984, when Gerard Piel's son Jonathan became president and editor; circulation had grown fifteen-fold since 1948. In 1986, it was sold to the Holtzbrinck group of Germany, which has owned it since. In the fall of 2008, Scientific American was put under the control of Nature Publishing Group, a division of Holtzbrinck. Donald Miller died in December 1998, Gerard Piel in September 2004 and Dennis Flanagan in January 2005. Mariette DiChristina became editor-in-chief after John Rennie stepped down in June 2009, and stepped down herself in September 2019.",
+        "firstPage": "ams.jpg",
+        "price": 78,
+        "period": "12 in year"
+        
+    },
+    
+    {
+        "name" : "Astronomy",
+        "date": "1973 - 2020",
+        "shortInfo": "Its a monthly American magazine about astronomy. Targeting amateur astronomers, it contains columns on sky viewing, reader-submitted astrophotographs, and articles on astronomy and astrophysics for general readers.",
+        "longInfo": "Astronomy publishes articles about the hobby and science of astronomy. Generally, the front half of the magazine reports on professional science, while the back half of the magazine presents items of interest to hobbyists. Science articles cover such topics as cosmology, space exploration, exobiology, research conducted by professional-class observatories, and individual professional astronomers. Each issue of Astronomy contains a foldout star map showing the evening sky for the current month and the positions of planets, and some comets.The magazine has regular columnists. They include science writer Bob Berman, who writes a column called “Bob Berman’s Strange Universe”. Stephen James O’Meara writes “Stephen James O’Meara’s Secret Sky,” which covers observing tips and stories relating to deep-sky objects, planets, and comets. Glenn Chaple writes \"Glenn Chaple’s Observing Basics\", a beginner’s column. Phil Harrington writes \"Phil Harrington’s Binocular Universe\", about observing with binoculars. \"Telescope Insider\" interviews people who are a part of the telescope-manufacturing industry. In each issue of Astronomy magazine, readers will find star and planet charts, telescope observing tips and techniques, and advice on taking photography of the night sky. The magazine also publishes reader-submitted photos in a gallery, lists astronomy-related events, letters from readers, news, and announcements of new products. Astronomy may include special sections bound into the magazine, such as booklets or posters. Recent examples have included a Messier Catalog booklet, poster showing comet C/2006 P1 (McNaught) and historical comets, a Skyguide listing upcoming sky events, a Telescope Buyer's Guide; a poster titled \"Atlas of Extrasolar Planets\"; and a poster showing the life cycles of stars.",
+        "firstPage": "astronomy.jpg",
+        "price": 55,
+        "period": "12 in year"
+        
+    },
+    
+    {
+        "name" : "Popular Mechanics",
+        "date" : "1902 - 2020",
+        "shortInfo": "Its a magazine of popular science and technology, featuring automotive, home, outdoor, electronics, science, do-it-yourself, and technology topics. Military topics, aviation and transportation of all types, space, tools and gadgets are commonly featured",
+        "longInfo" : "Popular Mechanics was founded in Chicago by Henry Haven Windsor, with the first issue dated January 11, 1902. His concept was that it would explain \"the way the world works\" in plain language, with photos and illustrations to aid comprehension. For decades, its tagline was \"Written so you can understand it.\" The magazine was a weekly until September 1902, when it became a monthly. The Popular Mechanics Company was owned by the Windsor family and printed in Chicago until the Hearst Corporation purchased the magazine in 1958. In 1962, the editorial offices moved to New York City. From the first issue, the magazine featured a large illustration of a technological subject, a look that evolved into the magazine's characteristic full-page, full-color illustration and a small 6.5\" x 9.5\" trim size beginning with the July, 1911 issue. It maintained the small format until 1975 when it switched the larger standard trim size. Popular Science adopted full-color cover illustrations in 1915, and the look was widely imitated by later technology magazines. Several international editions were introduced after World War II, starting with a French edition, followed by Spanish in 1947, and Swedish and Danish in 1949. In 2002, the print magazine was being published in English, Chinese, and Spanish and distributed worldwide. South African and Russian editions were introduced that same year. Notable articles have been contributed by notable people including Guglielmo Marconi, Thomas Edison, Jules Verne, Barney Oldfield, Knute Rockne, Winston Churchill, Charles Kettering, Tom Wolfe and Buzz Aldrin, as well as some US presidents including Teddy Roosevelt and Ronald Reagan. Comedian and car expert Jay Leno had a regular column, Jay Leno's Garage, starting in March, 1999.",
+        
+        "firstPage": "pop.jpg",
+        "price": 14,
+        "period": "12 in year"
+        
+    },
+    
+    {
+        "name" : "New Scientist",
+        "date": " 1956 - 2020",
+        "shortInfo": "Sold in retail outlets (paper edition) and on subscription (paper and/or online), the magazine covers news, features, reviews and commentary on science, technology and their implications. New Scientist also publishes speculative articles, ranging from the technical to the philosophical.",
+        "longInfo": "The magazine was founded in 1956 by Tom Margerison, Max Raison and Nicholas Harrison as The New Scientist, with Issue 1 on 22 November 1956, priced one shilling (twentieth of a pound, pre-decimalisation in UK; £1.23 today). An article in the magazine's 10th anniversary issues provides anecdotes on the founding of the magazine. The British monthly science magazine Science Journal, published from 1965 until 1971, was merged with New Scientist to form New Scientist and Science Journal. In 1970, the Reed Group, which went on to become Reed Elsevier, acquired New Scientist when it merged with IPC Magazines. Reed retained the magazine when it sold most of its consumer titles in a management buyout to what is now TI Media. In April 2017, New Scientist changed hands when RELX Group, formerly known as Reed Elsevier, sold the magazine to Kingston Acquisitions, a group set up by Sir Bernard Gray, Louise Rogers and Matthew O’Sullivan to acquire New Scientist. Kingston Acquisitions then renamed itself New Scientist Ltd. Originally, the cover of New Scientist listed articles in plain text. Initially, page numbering followed academic practice with sequential numbering for each quarterly volume. So, for example, the first page of an issue in March could be 649 instead of 1. Later issues numbered issues separately. From the beginning of 1961 \"The\" was dropped from the title. From 1965, the front cover was illustrated. Until the 1970s, colour was not used except for on the cover.",
+        "firstPage": "new.jpg",
+        "price": 22,
+        "period": "4 in month"
+        
+    },
+    
+    {
         "name" : "All About Space",
         "date": "2012 - 2016",
         "shortInfo": "Its a monthly popular science magazine, focusing primarily on cosmological events, astronomical tips, and astronautical exploration.",
@@ -21,50 +66,7 @@
     
     },
     
-    {
-        "name" : "New Scientist",
-        "date": " 1956 - 2020",
-        "shortInfo": "Sold in retail outlets (paper edition) and on subscription (paper and/or online), the magazine covers news, features, reviews and commentary on science, technology and their implications. New Scientist also publishes speculative articles, ranging from the technical to the philosophical.",
-        "longInfo": "The magazine was founded in 1956 by Tom Margerison, Max Raison and Nicholas Harrison as The New Scientist, with Issue 1 on 22 November 1956, priced one shilling (twentieth of a pound, pre-decimalisation in UK; £1.23 today). An article in the magazine's 10th anniversary issues provides anecdotes on the founding of the magazine. The British monthly science magazine Science Journal, published from 1965 until 1971, was merged with New Scientist to form New Scientist and Science Journal. In 1970, the Reed Group, which went on to become Reed Elsevier, acquired New Scientist when it merged with IPC Magazines. Reed retained the magazine when it sold most of its consumer titles in a management buyout to what is now TI Media. In April 2017, New Scientist changed hands when RELX Group, formerly known as Reed Elsevier, sold the magazine to Kingston Acquisitions, a group set up by Sir Bernard Gray, Louise Rogers and Matthew O’Sullivan to acquire New Scientist. Kingston Acquisitions then renamed itself New Scientist Ltd. Originally, the cover of New Scientist listed articles in plain text. Initially, page numbering followed academic practice with sequential numbering for each quarterly volume. So, for example, the first page of an issue in March could be 649 instead of 1. Later issues numbered issues separately. From the beginning of 1961 \"The\" was dropped from the title. From 1965, the front cover was illustrated. Until the 1970s, colour was not used except for on the cover.",
-        "firstPage": "new.jpg",
-        "price": 22,
-        "period": "4 in month"
-        
-    },
-    
-    {
-        "name" : "Popular Mechanics",
-        "date" : "1902 - 2020",
-        "shortInfo": "Its a magazine of popular science and technology, featuring automotive, home, outdoor, electronics, science, do-it-yourself, and technology topics. Military topics, aviation and transportation of all types, space, tools and gadgets are commonly featured",
-        "longInfo" : "Popular Mechanics was founded in Chicago by Henry Haven Windsor, with the first issue dated January 11, 1902. His concept was that it would explain \"the way the world works\" in plain language, with photos and illustrations to aid comprehension. For decades, its tagline was \"Written so you can understand it.\" The magazine was a weekly until September 1902, when it became a monthly. The Popular Mechanics Company was owned by the Windsor family and printed in Chicago until the Hearst Corporation purchased the magazine in 1958. In 1962, the editorial offices moved to New York City. From the first issue, the magazine featured a large illustration of a technological subject, a look that evolved into the magazine's characteristic full-page, full-color illustration and a small 6.5\" x 9.5\" trim size beginning with the July, 1911 issue. It maintained the small format until 1975 when it switched the larger standard trim size. Popular Science adopted full-color cover illustrations in 1915, and the look was widely imitated by later technology magazines. Several international editions were introduced after World War II, starting with a French edition, followed by Spanish in 1947, and Swedish and Danish in 1949. In 2002, the print magazine was being published in English, Chinese, and Spanish and distributed worldwide. South African and Russian editions were introduced that same year. Notable articles have been contributed by notable people including Guglielmo Marconi, Thomas Edison, Jules Verne, Barney Oldfield, Knute Rockne, Winston Churchill, Charles Kettering, Tom Wolfe and Buzz Aldrin, as well as some US presidents including Teddy Roosevelt and Ronald Reagan. Comedian and car expert Jay Leno had a regular column, Jay Leno's Garage, starting in March, 1999.",
-        
-        "firstPage": "pop.jpg",
-        "price": 14,
-        "period": "12 in year"
-        
-    },
-    
-    {
-        "name" : "Astronomy",
-        "date": "1973 - 2020",
-        "shortInfo": "Its a monthly American magazine about astronomy. Targeting amateur astronomers, it contains columns on sky viewing, reader-submitted astrophotographs, and articles on astronomy and astrophysics for general readers.",
-        "longInfo": "Astronomy publishes articles about the hobby and science of astronomy. Generally, the front half of the magazine reports on professional science, while the back half of the magazine presents items of interest to hobbyists. Science articles cover such topics as cosmology, space exploration, exobiology, research conducted by professional-class observatories, and individual professional astronomers. Each issue of Astronomy contains a foldout star map showing the evening sky for the current month and the positions of planets, and some comets.The magazine has regular columnists. They include science writer Bob Berman, who writes a column called “Bob Berman’s Strange Universe”. Stephen James O’Meara writes “Stephen James O’Meara’s Secret Sky,” which covers observing tips and stories relating to deep-sky objects, planets, and comets. Glenn Chaple writes \"Glenn Chaple’s Observing Basics\", a beginner’s column. Phil Harrington writes \"Phil Harrington’s Binocular Universe\", about observing with binoculars. \"Telescope Insider\" interviews people who are a part of the telescope-manufacturing industry. In each issue of Astronomy magazine, readers will find star and planet charts, telescope observing tips and techniques, and advice on taking photography of the night sky. The magazine also publishes reader-submitted photos in a gallery, lists astronomy-related events, letters from readers, news, and announcements of new products. Astronomy may include special sections bound into the magazine, such as booklets or posters. Recent examples have included a Messier Catalog booklet, poster showing comet C/2006 P1 (McNaught) and historical comets, a Skyguide listing upcoming sky events, a Telescope Buyer's Guide; a poster titled \"Atlas of Extrasolar Planets\"; and a poster showing the life cycles of stars.",
-        "firstPage": "astronomy.jpg",
-        "price": 55,
-        "period": "12 in year"
-        
-    },
-    
-    {
-        "name" : "Scientific American",
-        "date" : "1845 - 2020",
-        "shortInfo":  "Its an American popular science magazine. Many famous scientists, including Albert Einstein, have contributed articles to it. It is the oldest continuously published monthly magazine in the United States (though it only became monthly in 1921).",
-        "longInfo": "Scientific American was founded by inventor and publisher Rufus M. Porter in 1845 as a four-page weekly newspaper. Throughout its early years, much emphasis was placed on reports of what was going on at the U.S. Patent Office. It also reported on a broad range of inventions including perpetual motion machines, an 1860 device for buoying vessels by Abraham Lincoln, and the universal joint which now can be found in nearly every automobile manufactured. Current issues include a \"this date in history\" section, featuring excerpts from articles originally published 50, 100, and 150 years earlier. Topics include humorous incidents, wrong-headed theories, and noteworthy advances in the history of science and technology. Porter sold the publication to Alfred Ely Beach and Orson Desaix Munn a mere ten months after founding it. Until 1948, it remained owned by Munn & Company. Under Munn's grandson, Orson Desaix Munn III, it had evolved into something of a \"workbench\" publication, similar to the twentieth-century incarnation of Popular Science. In the years after World War II, the magazine fell into decline. In 1948, three partners who were planning on starting a new popular science magazine, to be called The Sciences, purchased the assets of the old Scientific American instead and put its name on the designs they had created for their new magazine. Thus the partners—publisher Gerard Piel, editor Dennis Flanagan, and general manager Donald H. Miller, Jr.—essentially created a new magazine. Miller retired in 1979, Flanagan and Piel in 1984, when Gerard Piel's son Jonathan became president and editor; circulation had grown fifteen-fold since 1948. In 1986, it was sold to the Holtzbrinck group of Germany, which has owned it since. In the fall of 2008, Scientific American was put under the control of Nature Publishing Group, a division of Holtzbrinck. Donald Miller died in December 1998, Gerard Piel in September 2004 and Dennis Flanagan in January 2005. Mariette DiChristina became editor-in-chief after John Rennie stepped down in June 2009, and stepped down herself in September 2019.",
-        "firstPage": "ams.jpg",
-        "price": 78,
-        "period": "12 in year"
-        
-    },
+
     
     {
         "name" : "COMPUTATIONAL NANOTECHNOLOGY",

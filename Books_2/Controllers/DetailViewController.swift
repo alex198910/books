@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         setupTopTitle()
         setupTextView()
         setupBookImage()
@@ -43,17 +44,14 @@ class DetailViewController: UIViewController {
         topTitle.textAlignment = .center
         topTitle.numberOfLines = 0
         topTitle.translatesAutoresizingMaskIntoConstraints = false
-        //topTitle.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
         topTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
         topTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         topTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -5).isActive = true
         topTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
-        //topTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 10).isActive = true
     }
     
     func setupBookImage() {
         self.view.addSubview(bookImage)
-        //bookImage.frame = UIScreen.main.bounds
         bookImage.translatesAutoresizingMaskIntoConstraints = false
         bookImage.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         bookImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -62,10 +60,6 @@ class DetailViewController: UIViewController {
         bookImage.image = UIImage(named: image ?? "no_image.png")
         bookImage.alpha = 0.2
     }
-    
-    
-    
-    
 
     /*
     // MARK: - Navigation

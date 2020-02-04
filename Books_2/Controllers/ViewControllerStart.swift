@@ -20,18 +20,18 @@ class ViewControllerStart: UIViewController {
     var spinner = UIActivityIndicatorView()
     
     
-    @objc func booksButtonAction(){
+    @objc func booksButtonAction() {
         stackView.isHidden = true
         spinner.startAnimating()
         source.makeBookLink()
         newDatagetter()
     }
     
-    @objc func magazinesButtonAction(){
-           stackView.isHidden = true
-           spinner.startAnimating()
-           source.makeMagazineLink()
-           newDatagetter()
+    @objc func magazinesButtonAction() {
+        stackView.isHidden = true
+        spinner.startAnimating()
+        source.makeMagazineLink()
+        newDatagetter()
        }
     
     override func viewDidLoad() {
@@ -120,7 +120,4 @@ class ViewControllerStart: UIViewController {
         
     }
     
-
-
 }
-
