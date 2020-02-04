@@ -21,10 +21,8 @@ class ViewControllerStart: UIViewController {
     var MDataManager = MagazineDataManager.shared
     
     @objc func booksButtonAction(){
-        print("booksButtonAction")
         stackView.isHidden = true
         spinner.startAnimating()
-                
         dataManager.getMovies { [weak self] data in
             guard let strongSelf = self, let data = data, data.count > 0 else {
                 self?.spinner.stopAnimating()
@@ -83,12 +81,9 @@ class ViewControllerStart: UIViewController {
            }
        }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-    
         setupStackView()
         setupSpinner()
         setupMagazineButton()

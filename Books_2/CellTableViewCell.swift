@@ -21,6 +21,8 @@ class CellTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    
+        self.translatesAutoresizingMaskIntoConstraints = false
         setupShort()
         setupInfo()
         setupImage()
@@ -29,12 +31,14 @@ class CellTableViewCell: UITableViewCell {
     
     func setupShort(){
         addSubview(short)
-        short.frame = CGRect(x: 120, y: 70, width: 245, height: 30)
+        short.frame = CGRect(x: 120, y: 70, width: self.frame.width - 125, height: 30)
+        //short.leftAnchor.constraint(equalTo: bookImage.rightAnchor, constant: 5).isActive = true
         
         short.numberOfLines = 0
         short.sizeToFit()
         short.textAlignment = .left
         short.font = .systemFont(ofSize: 9, weight: .light)
+        
     }
     
     func setupInfo(){
@@ -43,6 +47,7 @@ class CellTableViewCell: UITableViewCell {
         info.numberOfLines = 0
         info.sizeToFit()
         info.textAlignment = .left
+        
     }
     
     func setupImage(){

@@ -11,8 +11,6 @@ import UIKit
 class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let tableView = UITableView.init(frame: .zero, style: .plain)
-    
-    
     var data: [Universal] = []
     
     override func viewDidLoad() {
@@ -44,15 +42,11 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath) as? CellTableViewCell else {
             return UITableViewCell()
         }
-        let image = data[indexPath.row].mainPicture
-        let titleName = (data[indexPath.row].nameUniversal )
-        cell.info.text = titleName
-        cell.bookImage.image = UIImage(named: image )
-        //cell.time.text = String(data[indexPath.row].year ?? 0)
+        cell.info.text = data[indexPath.row].nameUniversal
+        cell.bookImage.image = UIImage(named: data[indexPath.row].mainPicture )
         cell.backgroundColor = UIColor(red:0.87, green:0.65, blue:0.65, alpha:0.20)
-        var shortD = (data[indexPath.row].displayInfoForTableview ) + "\n\n"
-        shortD = shortD + "\(data[indexPath.row].shortMoreInfo)"
-        cell.short.text = shortD
+        let shortD = (data[indexPath.row].displayInfoForTableview ) + "\n\n"
+        cell.short.text = shortD + "\(data[indexPath.row].shortMoreInfo)"
         return cell
     }
     
@@ -65,7 +59,7 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         detailView.view.backgroundColor = UIColor.white
         self.navigationController?.pushViewController(detailView, animated: true)
     }
-
+    
     /*
     // MARK: - Navigation
 
