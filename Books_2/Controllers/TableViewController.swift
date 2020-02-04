@@ -22,6 +22,11 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tableView.reloadData()
+    }
+    
     func setupTableViewConstraint() {
         view.addSubview(self.tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
