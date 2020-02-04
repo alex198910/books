@@ -34,8 +34,6 @@ class ViewControllerStart: UIViewController {
            newDatagetter()
        }
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -63,7 +61,7 @@ class ViewControllerStart: UIViewController {
         booksButton.setTitle("Books", for: .normal)
         booksButton.setTitle("_____", for: .highlighted)
         booksButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
-        booksButton.backgroundColor = UIColor(red: 0.2, green: 0.1, blue: 0.1, alpha: 0.1)
+        booksButton.backgroundColor = UIColor(red: 0.5, green: 0.1, blue: 0.1, alpha: 0.2)
         booksButton.layer.cornerRadius = 10
         booksButton.addTarget(self, action:  Selector(("booksButtonAction")), for: .touchUpInside)
     }
@@ -76,7 +74,7 @@ class ViewControllerStart: UIViewController {
         magazinesButton.setTitle("Magazines", for: .normal)
         magazinesButton.setTitle("_____", for: .highlighted)
         magazinesButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
-        magazinesButton.backgroundColor = UIColor(red: 0.2, green: 0.1, blue: 0.5, alpha: 0.1)
+        magazinesButton.backgroundColor = UIColor(red: 0.2, green: 0.5, blue: 0.1, alpha: 0.2)
         magazinesButton.layer.cornerRadius = 10
         magazinesButton.addTarget(self, action:  Selector(("magazinesButtonAction")), for: .touchUpInside)
     }
@@ -89,7 +87,7 @@ class ViewControllerStart: UIViewController {
         spinner.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         spinner.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         spinner.center = self.view.center
-        spinner.color = UIColor.red
+        spinner.color = UIColor(red:0.13, green:0.56, blue:0.97, alpha:1.0)
         spinner.style = UIActivityIndicatorView.Style.large
         
     }
