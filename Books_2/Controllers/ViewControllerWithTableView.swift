@@ -15,12 +15,10 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.systemYellow
-        self.tableView.register(UINib(nibName: "CellTableViewCell", bundle: nil), forCellReuseIdentifier: "CellTableViewCell")
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        tableView.register(UINib(nibName: "CellTableViewCell", bundle: nil), forCellReuseIdentifier: "CellTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
         setupTableViewConstraint()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +55,7 @@ class ViewControllerWithTableView: UIViewController, UITableViewDelegate, UITabl
         let detailView = DetailViewController()
         let infoForCell = data[indexPath.row]
         detailView.longDescription.text = infoForCell.displayInfoForDetailview
-        detailView.topTitle.text = infoForCell.nameUniversal
+        detailView.headlineTitle.text = infoForCell.nameUniversal
         detailView.image = infoForCell.mainPicture
         
         self.navigationController?.pushViewController(detailView, animated: true)

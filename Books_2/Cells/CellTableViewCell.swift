@@ -29,7 +29,7 @@ class CellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupShort(){
+    func setupShort() {
         addSubview(shortDescription)
         shortDescription.frame = CGRect(x: 120, y: 70, width: self.frame.width - 125, height: 30)
         shortDescription.numberOfLines = 0
@@ -38,7 +38,7 @@ class CellTableViewCell: UITableViewCell {
         shortDescription.font = .systemFont(ofSize: 9, weight: .light)
     }
     
-    func setupInfo(){
+    func setupInfo() {
         addSubview(titleHeadline)
         titleHeadline.frame = CGRect(x: 120, y: 0, width: 245, height: 70)
         titleHeadline.numberOfLines = 0
@@ -46,9 +46,8 @@ class CellTableViewCell: UITableViewCell {
         titleHeadline.textAlignment = .left
     }
     
-    func setupImage(){
+    func setupImage() {
         addSubview(imageOfProduct)
         imageOfProduct.frame = CGRect(x: 0, y: 0, width: 110, height: 200)
     }
-    
 }

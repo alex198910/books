@@ -10,47 +10,48 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    let topTitle = UILabel()
+    let headlineTitle = UILabel()
     let longDescription = UILabel()
     let bookImage = UIImageView()
     var scrollView = UIScrollView()
-    var image : String?
-    var textView = UITextView()
+    var londDescription = UITextView()
+    var image: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        setupTopTitle()
-        setupTextView()
-        setupBookImage()
+        setupHeadlineTitle()
+        setupLondDescription()
+        setupBackgroundImage()
     }
     
     
-    func setupTextView(){
-        self.view.addSubview(textView)
-        textView.text = longDescription.text
-        textView.font = .systemFont(ofSize: 14, weight: .light)
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -25).isActive = true
-        textView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 25).isActive = true
-        textView.topAnchor.constraint(equalTo: topTitle.bottomAnchor).isActive = true
-        textView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    func setupHeadlineTitle() {
+        self.view.addSubview(headlineTitle)
+        headlineTitle.font = .systemFont(ofSize: 25)
+        headlineTitle.textAlignment = .center
+        headlineTitle.numberOfLines = 0
+        headlineTitle.translatesAutoresizingMaskIntoConstraints = false
+        headlineTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        headlineTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        headlineTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -5).isActive = true
+        headlineTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
     }
     
     
-    func setupTopTitle() {
-        self.view.addSubview(topTitle)
-        topTitle.font = .systemFont(ofSize: 25)
-        topTitle.textAlignment = .center
-        topTitle.numberOfLines = 0
-        topTitle.translatesAutoresizingMaskIntoConstraints = false
-        topTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
-        topTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        topTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -5).isActive = true
-        topTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
+    func setupLondDescription() {
+        self.view.addSubview(londDescription)
+        londDescription.text = longDescription.text
+        londDescription.font = .systemFont(ofSize: 14, weight: .light)
+        londDescription.translatesAutoresizingMaskIntoConstraints = false
+        londDescription.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
+        londDescription.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
+        londDescription.topAnchor.constraint(equalTo: headlineTitle.bottomAnchor).isActive = true
+        londDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    func setupBookImage() {
+
+    func setupBackgroundImage() {
         self.view.addSubview(bookImage)
         bookImage.translatesAutoresizingMaskIntoConstraints = false
         bookImage.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
