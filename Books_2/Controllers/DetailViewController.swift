@@ -30,10 +30,10 @@ class DetailViewController: UIViewController {
         headlineTitle.textAlignment = .center
         headlineTitle.numberOfLines = 0
         headlineTitle.translatesAutoresizingMaskIntoConstraints = false
-        headlineTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        headlineTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         headlineTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        headlineTitle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -5).isActive = true
-        headlineTitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
+        headlineTitle.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -5).isActive = true
+        headlineTitle.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 5).isActive = true
     }
     
     
@@ -41,8 +41,8 @@ class DetailViewController: UIViewController {
         self.view.addSubview(longDescription)
         longDescription.font = .systemFont(ofSize: 14, weight: .light)
         longDescription.translatesAutoresizingMaskIntoConstraints = false
-        longDescription.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30).isActive = true
-        longDescription.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = true
+        longDescription.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
+        longDescription.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
         longDescription.topAnchor.constraint(equalTo: headlineTitle.bottomAnchor).isActive = true
         longDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
