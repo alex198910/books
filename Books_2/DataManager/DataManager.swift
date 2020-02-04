@@ -13,7 +13,7 @@ class DataManager {
     static let shared = DataManager()
     private var apiManager = APIManager()
 
-    func getMovies(completion: @escaping ([Book]?) -> () ) {
+    func getMovies(completion: @escaping ([Universal]?) -> () ) {
         getData { data in
             guard let data = data else {
                 // bad link
@@ -28,7 +28,7 @@ class DataManager {
         }
     }
     
-    private func getData(completion: @escaping ([Book]?) -> () ) {
+    private func getData(completion: @escaping ([Universal]?) -> () ) {
         apiManager.getData { data in
             completion(data)
         }

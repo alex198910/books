@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Book: Decodable {
     var author: String?
     var country: String?
@@ -30,7 +29,6 @@ struct Magazine: Decodable {
     var firstPage: String?
     var price: Int?
     var period: String?
-    
 }
 
 

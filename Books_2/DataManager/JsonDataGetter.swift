@@ -8,18 +8,24 @@
 
 import UIKit
 
-import UIKit
-
 class JsonDataGetter {
-    func decodeJson(myData: Data, comletion: @escaping (([Book]?) -> Void)) {
+    func decodeJson(myData: Data, comletion: @escaping (([Universal]?) -> Void)) {
         do {
-            let jsonData = try JSONDecoder().decode([Book].self, from: myData)
-            comletion(jsonData)
+            let typeOfDecodableArray = SourceForParse.shared.typeOfArray
+            switch typeOfDecodableArray {
+            case "Array<Book>":
+                do {let jsonData = try JSONDecoder().decode(Array<Book>.self, from: myData)
+                comletion(jsonData)}
+            case "Array<Magazine>":
+                do {let jsonData = try JSONDecoder().decode(Array<Magazine>.self, from: myData)
+                comletion(jsonData)}
+            default:
+                comletion(nil)
+            }
             
         } catch {
             //print("Error during parsing ---> \(error) ")
             comletion(nil)
-            
         }
         
     }

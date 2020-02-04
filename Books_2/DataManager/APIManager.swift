@@ -9,10 +9,9 @@
 import UIKit
 
 class APIManager {
-    private let urlPath = "https://firebasestorage.googleapis.com/v0/b/testfirebase-d377b.appspot.com/o/listOfBooks.json?alt=media&token=2d5f38f7-57f2-42cb-8081-bb85c9573903"
     private var jsonParser = JsonDataGetter()
-    func getData(completion: @escaping (([Book]?) -> Void)) {
-        guard let url = URL(string: urlPath) else {
+    func getData(completion: @escaping (([Universal]?) -> Void)) {
+        guard let url = URL(string: SourceForParse.shared.link) else {
             completion(nil)
             return
             

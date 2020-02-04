@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8462B67F23E96FBB00A42CEC /* SourceForPars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462B67E23E96FBB00A42CEC /* SourceForPars.swift */; };
 		8488912323DF16370012CD69 /* ViewControllerWithTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488912223DF16370012CD69 /* ViewControllerWithTableView.swift */; };
 		8488914E23E059260012CD69 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488914C23E059260012CD69 /* CellTableViewCell.swift */; };
 		8488914F23E059260012CD69 /* CellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8488914D23E059260012CD69 /* CellTableViewCell.xib */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8462B67E23E96FBB00A42CEC /* SourceForPars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceForPars.swift; sourceTree = "<group>"; };
 		8488912223DF16370012CD69 /* ViewControllerWithTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithTableView.swift; sourceTree = "<group>"; };
 		8488914C23E059260012CD69 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		8488914D23E059260012CD69 /* CellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTableViewCell.xib; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				84CCE2FE23E45888000C1D12 /* DataManagerForMagazines */,
 				84ABC3BA23E3313F006C3501 /* magazines.json */,
 				84CCE30523E459B8000C1D12 /* Struct.swift */,
+				8462B67E23E96FBB00A42CEC /* SourceForPars.swift */,
 			);
 			path = Books_2;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				848B63D123E0877700D43771 /* APIManager.swift in Sources */,
 				848B63D523E08A6700D43771 /* DataManager.swift in Sources */,
 				84CCE30423E4592A000C1D12 /* MagazineDataManager.swift in Sources */,
+				8462B67F23E96FBB00A42CEC /* SourceForPars.swift in Sources */,
 				8497147F23DEE4A100E92190 /* ViewControllerStart.swift in Sources */,
 				848B63D323E087AD00D43771 /* JsonDataGetter.swift in Sources */,
 				84CCE30223E45908000C1D12 /* MagazineJsonDataGetter.swift in Sources */,

@@ -13,73 +13,28 @@ class ViewControllerStart: UIViewController {
     
     let booksButton: UIButton = UIButton(type: .system)
     let magazinesButton: UIButton = UIButton(type: .system)
+    let stackView = UIStackView()
+    let source = SourceForParse.shared
+    let dataManager = DataManager.shared
     var data = [Universal]()
     var spinner = UIActivityIndicatorView()
-    let stackView = UIStackView()
     
-    var dataManager = DataManager.shared
-    var MDataManager = MagazineDataManager.shared
     
     @objc func booksButtonAction(){
         stackView.isHidden = true
         spinner.startAnimating()
-        dataManager.getMovies { [weak self] data in
-            guard let strongSelf = self, let data = data, data.count > 0 else {
-                self?.spinner.stopAnimating()
-                let alertUIAlertController = UIAlertController(title: "Ошибка", message: "Ошибка загрузки файлов", preferredStyle: .alert)
-                let closeButtonUIAlertAction = UIAlertAction(title: "Закрыть", style: .default, handler: { action in})
-                alertUIAlertController.addAction(closeButtonUIAlertAction)
-
-                DispatchQueue.main.async(execute: {
-                    self?.present(alertUIAlertController, animated: true)
-                    self?.spinner.stopAnimating()
-                    self?.stackView.isHidden = false
-                })
-                return
-            }
-            
-            strongSelf.data = data
-                    //print(data)
-                   DispatchQueue.main.async {
-                    self?.spinner.stopAnimating()
-                    let mainTVC = ViewControllerWithTableView()
-                    mainTVC.data = strongSelf.data
-                    self?.navigationController?.pushViewController(mainTVC, animated: true)
-                    self?.stackView.isHidden = false
-                   }
-        }
+        source.makeBookLink()
+        newDatagetter()
     }
     
     @objc func magazinesButtonAction(){
            stackView.isHidden = true
            spinner.startAnimating()
-                   
-           MDataManager.getMovies { [weak self] data in
-               guard let strongSelf = self, let data = data, data.count > 0 else {
-                   self?.spinner.stopAnimating()
-                   let alertUIAlertController = UIAlertController(title: "Ошибка", message: "Ошибка загрузки файлов", preferredStyle: .alert)
-                   let closeButtonUIAlertAction = UIAlertAction(title: "Закрыть", style: .default, handler: { action in})
-                   alertUIAlertController.addAction(closeButtonUIAlertAction)
-
-                   DispatchQueue.main.async(execute: {
-                       self?.present(alertUIAlertController, animated: true)
-                       self?.spinner.stopAnimating()
-                       self?.stackView.isHidden = false
-                   })
-                   return
-               }
-               
-               strongSelf.data = data
-                       //print(data)
-                      DispatchQueue.main.async {
-                       self?.spinner.stopAnimating()
-                       let mainTVC = ViewControllerWithTableView()
-                       mainTVC.data = strongSelf.data
-                       self?.navigationController?.pushViewController(mainTVC, animated: true)
-                       self?.stackView.isHidden = false
-                      }
-           }
+           source.makeMagazineLink()
+           newDatagetter()
        }
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,6 +93,35 @@ class ViewControllerStart: UIViewController {
         spinner.style = UIActivityIndicatorView.Style.large
         
     }
+    
+    func newDatagetter() {
+        dataManager.getMovies { [weak self] data in
+            guard let strongSelf = self, let data = data, data.count > 0 else {
+                self?.spinner.stopAnimating()
+                let alertUIAlertController = UIAlertController(title: "Ошибка", message: "Ошибка загрузки файлов", preferredStyle: .alert)
+                let closeButtonUIAlertAction = UIAlertAction(title: "Закрыть", style: .default, handler: { action in})
+                alertUIAlertController.addAction(closeButtonUIAlertAction)
+
+                DispatchQueue.main.async(execute: {
+                    self?.present(alertUIAlertController, animated: true)
+                    self?.spinner.stopAnimating()
+                    self?.stackView.isHidden = false
+                })
+                return
+            }
+            
+            strongSelf.data = data
+            DispatchQueue.main.async {
+                self?.spinner.stopAnimating()
+                let mainTVC = ViewControllerWithTableView()
+                mainTVC.data = strongSelf.data
+                self?.navigationController?.pushViewController(mainTVC, animated: true)
+                self?.stackView.isHidden = false
+            }
+        }
+        
+    }
+    
 
 
 }
