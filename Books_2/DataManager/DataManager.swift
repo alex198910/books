@@ -13,17 +13,13 @@ class DataManager {
     static let shared = DataManager()
     private var apiManager = APIManager()
 
-    func getMovies(completion: @escaping ([Universal]?) -> () ) {
+    func getUniversalData(completion: @escaping ([Universal]?) -> () ) {
         getData { data in
             guard let data = data else {
                 // bad link
                 completion(nil)
                 return
             }
-            // json data
-//            DispatchQueue.global(qos: .background).async{
-//                CoreDataManager.shared.add(movies: data)
-//            }
             completion(data)
         }
     }

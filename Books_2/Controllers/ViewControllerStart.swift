@@ -95,7 +95,7 @@ class ViewControllerStart: UIViewController {
     }
     
     func newDatagetter() {
-        dataManager.getMovies { [weak self] data in
+        dataManager.getUniversalData { [weak self] data in
             guard let strongSelf = self, let data = data, data.count > 0 else {
                 self?.spinner.stopAnimating()
                 let alertUIAlertController = UIAlertController(title: "Ошибка", message: "Ошибка загрузки файлов", preferredStyle: .alert)
